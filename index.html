@@ -1,22 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studio Ghibli API</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <div id="content-container">
-        <h1>Studio Ghibli</h1>
 
-        <select name="movies" id="select-movie">
-            <option value=""></option>
-        </select>
+<body>
+    <h1>Studio Ghibli</h1>
+    <div id="startDiv">
+
+        <p>Welcome to Studio Ghibli movie description. To get started press the button below</p>
+        <button id="start">Get started</button>
+
+    </div>
+    
+    <div id="content-container" class="hidden">
+        <h2>Here you can find all studio ghibli movies</h2>
+        <h4>Don't forget to try out the awesome sorting system</h4>
+
+        <h2>Totally awesome sorting system</h2>
+        <div class="select-con">
+            <select name="movies" id="sort">
+                <option value="all">All</option>
+                <option value="release">Release Date</option>
+                <option value="director">Director</option>
+                <option value="movie">Movie Title</option>
+            </select>
+        </div>
+
+        <div class="select-con hidden" id="movie">
+            <select name="movies" id="select-movie">
+                <option value="">Select movie</option>
+            </select>
+        </div>
 
         <div id="movie-details"></div>
     </div>
-    
+
     <script src="js/main.js"></script>
 </body>
+
 </html>
