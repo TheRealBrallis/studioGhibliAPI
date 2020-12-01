@@ -1,9 +1,47 @@
+body {
+    background-color: #f6f6f6;
+    margin: 0;;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-image: linear-gradient(120deg, #fbc2eb 0%, #a6c1ee 100%);
+    margin-bottom: 50px;
+}
+
+nav h1 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+}
+
+.nav-links li {
+    list-style: none;
+    padding: 2rem 2rem;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
 section {
     margin-bottom: 50px;
 }
 
 .select-con {
     display: inline-block;
+    margin-bottom: 50px;
 }
 
 .hidden {
@@ -17,4 +55,162 @@ section {
 a {
     text-decoration: none;
     color: black;
+    margin-right: 20px;
+}
+
+#startDiv {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.logo {
+    height: auto;
+    width: 25%;
+}
+
+#startDiv img {
+    height: auto;
+    width: 50%;
+}
+
+#content-container #image {
+    width: 250px;
+    height: 300px;
+    position: relative;
+    top: 17px;
+}
+
+#selected-movie-image {
+    width: 60%;
+}
+
+#content-container a {
+    margin-right: none;
+}
+
+.movie-con {
+    display: flex;
+}
+
+/* #image {
+    display: inline-block;
+} */
+
+.card h1 {
+    text-align: center;
+    padding: 1.5rem 2.5rem;
+    background-image: linear-gradient(120deg, #fbc2eb 0%, #a6c1ee 100%);
+    margin: 0 0 2rem 0;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.card p {
+    padding: 0 2.5rem 2.5rem;
+    margin: 0;
+}
+
+.card {
+    height: 300px;
+    width: 400px;
+    margin: 1rem;
+    margin-right: 0;
+    background: white;
+    box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all .2s linear;
+    text-align: start;
+}
+
+#info .card {
+    height: auto;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#info {
+    margin-bottom: 50px;
+}
+
+#content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* #movie-details {
+    margin-left: 200px;
+} */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 690px;
+}
+
+#people-section, #location-section{
+    text-align: center;
+}
+
+/* people card */
+
+.normal-card h1 {
+    text-align: center;
+    padding: 1.5rem 2.5rem;
+    background-image: linear-gradient(120deg, #fbc2eb 0%, #a6c1ee 100%);
+    margin: 0 0 2rem 0;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.normal-card p {
+    padding: 0 2.5rem 2.5rem;
+    margin: 0;
+}
+
+.people-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.normal-card {
+    margin: 1rem;
+    background: white;
+    box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all .2s linear;
+}
+
+.normal-card:hover {
+    box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
+    transform: translate3D(0, -2px, 0);
+}
+
+@media screen and (min-width: 600px) {
+    .normal-card {
+        flex: 1 1 calc(50% - 2rem);
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .normal-card {
+        flex: 1 1 calc(33% - 2rem);
+    }
+}
+
+.normal-card:nth-child(2n) h1 {
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.normal-card:nth-child(4n) h1 {
+    background-image: linear-gradient(120deg, #ff9a9e 0%, #fecfef 100%);
+}
+
+.normal-card:nth-child(5n) h1 {
+    background-image: linear-gradient(120deg, #ffc3a0 0%, #ffafbd 100%);
 }
