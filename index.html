@@ -9,15 +9,22 @@
 </head>
 
 <body>
-    <h1>Studio Ghibli</h1>
+    <nav id="links" class="hidden">
+        <ul class="nav-links">
+            <li><a href="index.html" id="sgMovie">Start</a></li>
+            <li><a href="#" id="sgPeople">Characters</a></li>
+            <li><a href="#" id="sgLocations">Location</a></li>
+        </ul>
+    </nav>
     <div id="startDiv">
-
+        <img src="img/logo.png" alt="">
         <p>Welcome to Studio Ghibli movie description. To get started press the button below</p>
         <button id="start">Get started</button>
 
     </div>
-    
+
     <div id="content-container" class="hidden">
+        <img src="img/logo.png" alt="" class="logo">
         <h2>Here you can find all studio ghibli movies</h2>
         <h4>Don't forget to try out the awesome sorting system</h4>
 
@@ -37,10 +44,28 @@
             </select>
         </div>
 
-        <div id="movie-details"></div>
+        <div id="movie-details">
+            <div class="image"></div>
+        </div>
+
     </div>
 
-    <script src="js/main.js"></script>
+    <!-- people section -->
+    <div id="people-section" class="hidden">
+        <img src="img/logo.png" alt="" class="logo">
+        <h1>Here you can see details of all the Studio Ghibli characters</h1>
+        <div id="people-details"></div>
+    </div>
+
+    <!-- location section -->
+    <div id="location-section" class="hidden">
+        <img src="img/logo.png" alt="" class="logo">
+        <h1>Here you can see details of all the Studio Ghibli locations</h1>
+        <div id="location-details"></div>
+    </div>
+
+    <!-- <script src="js/main.js"></script> -->
+    <script src="js/test.js"></script>
 </body>
 
 </html>
